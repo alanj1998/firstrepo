@@ -1,0 +1,35 @@
+Summary: We want to use our arduino grove kit to output the CPU temp and GPU temp of our PC as well as displaying
+          a disconnect message and possibly sending an email if the temperature gets too high
+
+
+                                     ISSUES ENCOUNTERED 
+
+
+1) problem:  For reasons unknown the arduino was not receiving any data at first.
+   solution: We solved this by swapping from USB port 3.0 to its 2.0 counterpart.
+
+2) problem:  The arduino was out-putting the CPU and GPU temp string values but the actual data was not coming through.
+   solution: We ran our C# application as an administrator as we theorised that admin privaleges would be neccesary to send the hardware data.
+
+3) problem:  When choosing the "disconnect" option in our C# application program, we wanted our Grove-LCD kit to display that message on the screen after clearing
+   all the current values on the screen. The values were not being cleared.
+   solution: A lot of coding
+
+4) big problem: Everytime we solve a problem, 2 more problems take its place!
+   solution: .....
+
+5) problem:  The Arduino board itself proved to be faulty at times. 
+  
+6) problem:  At first we wanted to have a different value be outputted for the GPU temperature but we realised Alan didn't have a dedicated GPU in his laptop so
+   displaying GPU temperature would be made redundant by the fact that it was integrated into his CPU.
+   solution: We settled on displaying RAM (Random Access Memory) speed instead.
+
+7) problem:  When we wanted to work on our project most of the computer labs were being used for classes.
+
+8) problem:  We're receiving temperature and ram speed values but we're not getting the values we want.
+   solution: After fiddling with the code, we finally managed to get the CPU temp accurate and consistently updating as well as the RAM speed showing.
+
+9) problem: Arduino was unable of sending an email
+   solution: Moved email sending method to c# application.
+
+
